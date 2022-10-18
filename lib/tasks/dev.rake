@@ -5,8 +5,8 @@ namespace :dev do
       show_spinner("Apagando o BD...") {%x(rails db:drop)}
       show_spinner("Criando o BD...") {%x(rails db:create)}
       show_spinner("Migrando o BD...") {%x(rails db:migrate)}
-      %x(rails dev:add_coins)
       %x(rails dev:add_mining_types)
+      %x(rails dev:add_coins)
     else
       puts ("Você não está em ambiente de desenvolvimento!")
     end
@@ -19,17 +19,20 @@ namespace :dev do
           {
               description: "Bitcoin",
               acronym: "BTC",
-              url_image: "https://imagensemoldes.com.br/wp-content/uploads/2020/09/Imagem-Dinheiro-Bitcoin-PNG.png"
+              url_image: "https://imagensemoldes.com.br/wp-content/uploads/2020/09/Imagem-Dinheiro-Bitcoin-PNG.png",
+              mining_type: MiningType.find_by(acronym: 'PoW')
           },
           {
               description: "Ethereum",
               acronym: "ETH",
-              url_image: "https://www.pngall.com/wp-content/uploads/10/Ethereum-Logo-PNG.png"
+              url_image: "https://www.pngall.com/wp-content/uploads/10/Ethereum-Logo-PNG.png",
+              mining_type: MiningType.all.sample,
           },
           {
               description: "Dash",
               acronym: "DASH",
-              url_image: "https://ico-wiki.com/wp-content/uploads/2018/08/dash-coin-price.png"
+              url_image: "https://ico-wiki.com/wp-content/uploads/2018/08/dash-coin-price.png",
+              mining_type: MiningType.all.sample
           },
       ]
 

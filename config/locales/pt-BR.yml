@@ -5,7 +5,19 @@ pt-BR:
     edit: "Editar"
     show: "Mostrar"
     delete: "Apagar"
+    new: "Novo"
+    back: "Voltar"
   coin: Moedas
+  new:
+    coin: "Nova Moeda"
+    mining_type: "Novo Tipo de Mineração"
+  editing:
+    coin: "Editando Moeda"
+    mining_type: "Editando Tipo de Mineração"
+  showing:
+    coin: "Mostrando Moeda"
+    mining_type: "Mostrando Tipo de Mineração"
   mining_type: Tipos de mineração
+  msg_confirm: Tem certeza?
   welcome_description: Pronto para entrar no mundo do banco de criptomoedas? CryptoWallet é a sua porta de entrada para novos serviços de moeda digital para facilitar a vida. Você pode usar a CryptoWallet para comprar, vender e negociar criptomoedas.
   welcome_title: Adicione suas moedas criptográficas

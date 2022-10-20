@@ -5,7 +5,19 @@ en:
     edit: "Edit"
     show: "Show"
     delete: "Delete"
+    new: "New"
+    back: "Voltar"
   coin: Coins
+  new:
+    coin: "New Coin"
+    mining_type: "New Mining Type"
+  editing:
+    coin: "Editing Coin"
+    mining_type: "Editing Mining Type"
+  showing:
+    coin: "Showing Coin"
+    mining_type: "Showing Mining Type"
   mining_type: Mining Types
+  msg_confirm: Are you sure?
   welcome_description: Ready to enter the world of crypto banking? CryptoWallet is your gateway to brand new digital currency services to make life easier. You can use CryptoWallet to buy, sell, and trade crypto.
   welcome_title: Add your crypto coins in a wallet

@@ -1,5 +1,14 @@
 {
   "name": "crypto_wallet",
   "private": true,
-  "dependencies": {}
+  "dependencies": {
+    "bootstrap": "^5.2.2",
+    "jquery": "^3.6.1",
+    "popper.js": "^1.16.1"
+  },
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/guibrbs/crypto-wallet-rails.git",
+  "author": "guibrbs <200037994@aluno.unb.br>",
+  "license": "MIT"
 }
